@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            make25PercentDiscount() {
+                this.price *= 0.75;
+            }
+        }
+
+        const product1 = new Product('milk', 100);
+        product1.make25PercentDiscount();
+        console.log(product1.name + ' costs ' + product1.price);
+
+        const product2 = new Product('bread', 150);
+        product2.make25PercentDiscount();
+        console.log(product2.name + ' costs ' + product2.price);
+    </script>
+</body>
+
+</html>
